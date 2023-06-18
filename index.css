@@ -1,3 +1,67 @@
 body {
-    margin: 0;
+    display: block;
+    margin: 0 auto;
+    background-color: lightslategray;
+    font-family: 'Raleway', sans-serif;
+    width: 600px;
 } 
+
+header {
+    height: 167px;
+    display: block;
+}
+
+.header-img {
+    position: absolute;
+    width: 600px;
+    height: 167px;
+}
+
+h1 {
+    top: 40px;
+    left: 30px;
+    margin: 0;
+    position: relative;
+    color: #2b2b2b;
+    font-size: 48px;
+    text-shadow: 2px 0 #e2e2e2, -2px 0 #e2e2e2, 0 2px #e2e2e2, 0 -2px #e2e2e2,
+             1px 1px #e2e2e2, -1px -1px #e2e2e2, 1px -1px #e2e2e2, -1px 1px #e2e2e2;
+}
+
+h2 {
+    top: 12px;
+    left: 31px;
+    position: relative;
+    color: whitesmoke;
+    text-shadow: 2px 0 #101010, -2px 0 #101010, 0 2px #101010, 0 -2px #101010,
+             1px 1px #101010, -1px -1px #101010, 1px -1px #101010, -1px 1px #101010;
+}
+
+section {
+    background-color: #fffaf1;
+    display: flex;
+}
+
+.menus {
+    width: 550px;
+    margin: 0 auto;
+    padding: 7px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-img {
+    width: 70px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    background-color: #fffaf1;
+}
+
