@@ -43,12 +43,12 @@ h4 {
     margin: 0;
 }
 
-section {
+article {
     background-color: #fffaf1;
     border-bottom: 2px solid gray;
 }
 
-aside {
+section {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -18,7 +18,6 @@ function handleAddClick(menuId) {
 
 function getMenuHtml() {
     let menuItem = ``
-    let menuHtml = ``
 
     menuArray.forEach(function(menu) {
 
@@ -36,34 +35,11 @@ function getMenuHtml() {
         </div>
     `
     })
-    menuHtml += menuItem
-    return menuHtml
-}
-
-function createAside() {
-    document.getElementById('cart').innerHTML = createAside()
-    let asideHtml = `
-        <h4>Your Order</h4>
-        <div class="shopping-cart" id="shopping-cart">
-            <h3>${menu.name}</h3>
-        </div>
-    `
-    asideHtml += ``
-    return asideHtml
+    return menuItem
 }
 
 function render() {
     document.getElementById('menus').innerHTML = getMenuHtml()
-
-    const aside = document.querySelector('aside')
-
-    aside.innerHTML = createAside()
-        if (menuArray.length === 0) {
-            aside.classList.add(`hidden`)
-        }
-        else {
-            aside.classList.remove(`hidden`)
-        }
 }
 
 render()
