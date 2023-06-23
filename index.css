@@ -5,6 +5,7 @@ html, body {
     background-color: antiquewhite;
     font-family: 'Raleway', sans-serif;
     width: 600px;
+    height: 100%;
     color: #141414;
 } 
 
@@ -47,6 +48,7 @@ h4 {
 
 section {
     background-color: #fffaf1;
+    height: 100%;
 }
 
 .container {
@@ -234,6 +236,7 @@ button.close {
     border-radius: 5px;
     width: 100px;
     margin: 0 auto;
+    color: #101010;
 }
 
 .thanks {
