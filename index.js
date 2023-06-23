@@ -136,11 +136,6 @@ const closeModal = function() {
     event.preventDefault()
 }
 
-// function clearAllInputs(event) {
-//     let allInputs = document.querySelectorAll('input')
-//     allInputs.forEach(singleInput => (singleInput.value = ''))
-// }
-
 paymentModal.addEventListener('submit', function(e) {
     e.preventDefault()
     closeModal()
@@ -177,35 +172,10 @@ paymentModal.addEventListener('submit', function(e) {
             <img src="images/pirate.gif" class="pirate">
         </div>
     `
-    }, 3000)
+    }, 6000)
 
-    // <h3>Thanks, <span style="color: #e30000;">${buyerName}!</span> Your order is on it's way!</h3>
     }) 
 })
-
-// paymentModal.onsubmit = function() {
-//     closeModal()
-
-//     const buyerName = document.getElementById('buyer-name').value
-
-//     orderTitleHtml.classList.add('hidden')
-
-//     orderHtml.innerHTML = ''
-//     summaryEl.innerHTML = ''
-//     orderHtml.innerHTML = `
-//         <div class="thanks">
-//             <h3>Thanks, ${buyerName}! Your order is on it's way!</h3>
-//         </div>
-//         `
-
-//     menuArray.forEach(function(menu) {
-//         menu.orderNumber = 0
-//     })
-//     event.preventDefault()
-//     clearAllInputs()
-// }
-
-
 
 function getFeedHtml() {
     let feedHtml = ``
