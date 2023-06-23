@@ -1,96 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Rizza Pizza</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <img class="header-img" src="/images/header.png" alt="Rizza Pizza" id="image-1">
-        <h1>Rizza la Pizza</h1>
-        <h2>Good food. Good mood by AI</h2>
-    </header>
-    <section>
-        <div class="container">
-            <div class="menus" id="section-el"></div>
-            <div class="empty-order" id="empty-order"><p>Your order still empty.</p></div>
-            <div class="title hidden">
-                <h3 class="order-title">Your Order</h3>
-                <!-- Shopping cart -->
-            </div>
-            <div id="order-process"></div>
-            <div id="summary"></div>
+    <head>
+        <title>Rizza Pizza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
 
-            <form action="" class="hidden">
-                <button class="close-modal-btn" data-close-Modal="close-Modal">
-                  &times;
-                </button>
-                <h3>Enter card details</h3>
-                <label for="buyer-name">
-                  <span>Your name</span>
-                  <input
-                    type="text"
-                    id="buyer-name"
-                    pattern="[a-zA-Z][a-zA-Z\s]+"
-                    placeholder="Enter your name"
-                    required
-                    title="Only letters (and spaces) are allowed!"
-                    oninvalid="this.setCustomValidity('Enter your name, please!')"
-                    oninput="setCustomValidity('')"
-                  />
-                </label>
-                <label for="card-number">
-                  <span>Card number</span>
-                  <input
-                    type="text"
-                    id="card-number"
-                    pattern="\d*"
-                    minlength="16"
-                    maxlength="19"
-                    placeholder="Enter card number"
-                    required
-                    title="16-19 digits. Only digits are allowed! (no spaces)"
-                    oninvalid="this.setCustomValidity('Enter your card number, please!')"
-                    oninput="setCustomValidity('')"
-                  />
-                </label>
-                <label for="CVV">
-                  <span>CVV</span>
-                  <input
-                    type="text"
-                    id="CVV"
-                    pattern="\d*"
-                    minlength="3"
-                    maxlength="3"
-                    placeholder="Enter CVV"
-                    required
-                    title="The CVV code is on the back of your credit/debit card. Only digits are allowed!"
-                    oninvalid="this.setCustomValidity('Enter your card CVV, please!')"
-                    oninput="setCustomValidity('')"
-                  />
-                </label>
-          
-                <button type="submit" class="pay-btn" name="pay" data-pay="pay">
-                  Pay
-                </button>
-              </form>
-          
-              <section class="hidden overlay"></section>
-        </container>
-    </section>
+    <body>
+        <header>
+            <img class="header-img" src="/images/header.png" alt="Rizza Pizza" id="image-1">
+            <h1>Rizza la Pizza</h1>
+            <h2>Good food. Good mood by AI</h2>
+        </header>
 
+        <section>
+            <div class="container">
+                <div class="menus" id="section-el"></div>
+                <div class="empty-order" id="empty-order"><p>Your order is empty.</p></div>
+                <div class="title hidden">
+                    <h3 class="order-title">Your Order</h3>
+                        <!-- Shopping cart -->
+                </div>
+                <div id="order-process"></div>
+                <div id="summary"></div>
+                
+                <div>
+                    <form class="payment hidden" id="payment">
+                        <button class="close" data-close-Modal="close-Modal">x</button>
+                        <h3 style="text-align: center;">It's on me. Enter your details here.</h3>
+                        <div class="label">
+                            <span>Your name</span>
+                            <input id="buyer-name" type="text" name="fullName" placeholder="Enter your name" required />
+                        </div class="label">
+                        <div class="label">
+                            <span>Email address</span>
+                            <input type="email" name="email" placeholder="Enter your email" required />
+                        </div class="label">
+                        
+                        <button type="submit" class="pay-btn" name="pay" data-pay="pay">Pay</button>
+                    </form>
+                </div>
+            </container>
+        </section>
 
-    
-    <script src="index.js" type="module"></script>
-</body>
+        <script src="index.js" type="module"></script>
+    </body>
 </html>

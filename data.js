@@ -6,7 +6,7 @@ export const menuArray = [
         picture: 'images/cotton-candy.jpg',
         price: 14,
         id: 0,
-        numberOrdered: 0,
+        orderNumber: 0,
         uuid: uuidv4()
     },
         {
@@ -15,7 +15,7 @@ export const menuArray = [
         picture: 'images/jalapeno.png',
         price: 12,
         id: 1,
-        numberOrdered: 0,
+        orderNumber: 0,
         uuid: uuidv4()
     },
         {
@@ -24,25 +24,25 @@ export const menuArray = [
         picture: 'images/twilight.png',
         price: 11,
         id: 2,
-        numberOrdered: 0,
+        orderNumber: 0,
         uuid: uuidv4()
     },
         {
         name: "Nebula Beer",
-        ingredients: "grain, hops, yeast, water",
+        ingredients: "of outer space and the beautiful clouds of gas and dust found in galaxies",
         picture: 'images/nebula-beer.jpg',
         price: 10,
         id: 3,
-        numberOrdered: 0,
+        orderNumber: 0,
         uuid: uuidv4()
     },
         {
         name: "Underwater Tropical Juice",
-        ingredients: "mango, orange, rambutan, avocado",
+        ingredients: "the tropical flavors and colors associated with the underwater world",
         picture: 'images/underwater-tropical-juice.jpg',
         price: 11,
         id: 4,
-        numberOrdered: 0,
+        orderNumber: 0,
         uuid: uuidv4()
     }
 ]

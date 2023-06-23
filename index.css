@@ -5,7 +5,7 @@ html, body {
     background-color: antiquewhite;
     font-family: 'Raleway', sans-serif;
     width: 600px;
-    height: 100%;
+    color: #141414;
 } 
 
 header {
@@ -47,12 +47,12 @@ h4 {
 
 section {
     background-color: #fffaf1;
-    height: 100%;
 }
 
 .container {
     width: 550px;
     margin: 0 auto;
+    position: relative;
 }
 
 .menus {
@@ -138,10 +138,9 @@ li.bold {
 }
 
 .empty-order {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
 }
 
 .total-price {
@@ -166,7 +165,7 @@ small {
     height: 70px;
 }
 
-.checkout {
+button.checkout {
     font-weight: 700;
     width: 100%;
     padding: 10px 0px;
@@ -174,6 +173,79 @@ small {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* modal */
+.payment, .thanks {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow:
+        0px 0px 3.7px rgba(0, 0, 0, 0.139),
+        0px 0px 9px rgba(0, 0, 0, 0.17),
+        0px 0px 16.9px rgba(0, 0, 0, 0.184),
+        0px 0px 30.2px rgba(0, 0, 0, 0.193),
+        0px 0px 56.4px rgba(0, 0, 0, 0.204),
+        0px 0px 135px rgba(0, 0, 0, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.label {
+    display: flex;
+    padding-bottom: 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    background-color: antiquewhite;
+}
+
+button.close {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    background-color: #fffaf1;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    border: 1px solid gray;
+}
+
+.pay-btn {
+    padding: 5px;
+    background-color: #fffaf1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.thanks {
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+    left: 50px;
+}
+
+.pirate {
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 /* utility */
